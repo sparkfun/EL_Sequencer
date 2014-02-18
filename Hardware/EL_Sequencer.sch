@@ -12106,7 +12106,7 @@ Standard decoupling cap</description>
 <text x="205.74" y="96.52" size="1.778" layer="94">D12</text>
 <text x="205.74" y="93.98" size="1.778" layer="94">D13</text>
 <text x="166.116" y="11.176" size="2.54" layer="94">N. Seidle, M. Grusin</text>
-<text x="238.76" y="7.62" size="2.54" layer="94">2.1</text>
+<text x="238.76" y="7.62" size="2.54" layer="94">2.2</text>
 <text x="10.16" y="58.42" size="1.778" layer="97">Short SJ1 to bypass regulator</text>
 <text x="10.16" y="60.96" size="1.778" layer="97">3.3V regulator for external inverter</text>
 <text x="208.28" y="60.96" size="1.778" layer="97">Short SJ2 to support</text>
