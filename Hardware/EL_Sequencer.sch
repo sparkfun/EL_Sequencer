@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -71,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -81,12 +83,27 @@
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -113,6 +130,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -12063,6 +12082,76 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Electromechanical">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="KPS-1290">
+<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="3.35" y1="-1.3" x2="3.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="3.35" y1="1.3" x2="-3.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1.5" x2="1.4" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-2.8" x2="-1.4" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-2.8" x2="-1.4" y2="-1.5" width="0.127" layer="51"/>
+<smd name="P$1" x="-4.15" y="1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="P$2" x="-4.15" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="P$3" x="4.15" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="P$4" x="4.15" y="1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="O" x="-2.25" y="2.25" dx="0.7" dy="1.5" layer="1"/>
+<smd name="P" x="0.75" y="2.25" dx="0.7" dy="1.5" layer="1"/>
+<smd name="S" x="2.25" y="2.25" dx="0.7" dy="1.5" layer="1"/>
+<text x="2.5" y="-2.492" size="0.4064" layer="25">&gt;NAME</text>
+<text x="2.5" y="-3.23" size="0.4064" layer="27">&gt;VALUE</text>
+<hole x="-1.5" y="0" drill="0.9"/>
+<hole x="1.5" y="0" drill="0.9"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SW_SPDT">
+<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-1.905" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SWITCH_SPDT">
+<description>SWCH-10651
+
+Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
+<gates>
+<gate name="G$1" symbol="SW_SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KPS-1290">
+<connects>
+<connect gate="G$1" pin="O" pad="O"/>
+<connect gate="G$1" pin="P" pad="P"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-10651" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12234,6 +12323,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" value="PMEG4005EJ"/>
+<part name="U$3" library="SparkFun-Electromechanical" deviceset="SWITCH_SPDT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12269,21 +12359,19 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <text x="238.76" y="7.62" size="2.54" layer="94">2.2</text>
 <text x="10.16" y="58.42" size="1.778" layer="97">Short SJ1 to bypass regulator</text>
 <text x="10.16" y="60.96" size="1.778" layer="97">3.3V regulator for external inverter</text>
-<text x="208.28" y="60.96" size="1.778" layer="97">Short SJ2 to support</text>
-<text x="208.28" y="58.42" size="1.778" layer="97">wireless code uploading</text>
+<text x="223.52" y="55.88" size="1.778" layer="97">Short SJ2 to support</text>
+<text x="223.52" y="53.34" size="1.778" layer="97">wireless code uploading</text>
 <text x="2.54" y="2.54" size="1.778" layer="97">* A6, A7 are analog input only. A0-A5 can be analog input or digital I/O</text>
 <text x="203.2" y="160.02" size="1.778" layer="94">ARDUINO PINS</text>
 <text x="25.4" y="8.89" size="1.778" layer="97">See LM317 datasheet for values</text>
-<text x="208.28" y="55.88" size="1.778" layer="97">(experimental)</text>
+<text x="223.52" y="50.8" size="1.778" layer="97">(experimental)</text>
 <text x="5.08" y="180.34" size="1.778" layer="97">3.5V - 16V to operate ATmega</text>
 <text x="2.54" y="182.88" size="1.778" layer="97">Input voltage (VBATT or 5VUSB):</text>
 <text x="5.08" y="175.26" size="1.778" layer="97">&gt; (DC to inverter + 1.5V) if using LM317 regulator at a custom voltage</text>
 <text x="5.08" y="177.8" size="1.778" layer="97">&gt; 4.8V if using LM317 regulator at default 3.3V DC output to inverter</text>
 <text x="2.54" y="172.72" size="1.778" layer="97">Note that input voltage can be passed directly to inverter by closing SJ1</text>
-<text x="2.54" y="170.18" size="1.778" layer="97">Warning: if SJ1 is closed, inverter will see 5V with FTDI plugged in and switch at USB</text>
 <text x="50.8" y="160.02" size="1.778" layer="97">"USB"</text>
 <text x="50.8" y="147.32" size="1.778" layer="97">"BATT"</text>
-<text x="147.32" y="38.1" size="1.778" layer="97">Unplug XBEE to allow FTDI programming</text>
 <text x="169.926" y="6.604" size="2.54" layer="94">T. Klopfenstein</text>
 </plain>
 <instances>
@@ -12390,20 +12478,20 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="SJ1" gate="1" x="33.02" y="53.34"/>
 <instance part="S1" gate="G$1" x="45.72" y="152.4" rot="R180"/>
 <instance part="JP2" gate="G$1" x="15.24" y="81.28"/>
-<instance part="U4-DNP" gate="G$1" x="185.42" y="63.5"/>
-<instance part="P+7" gate="1" x="162.56" y="76.2" smashed="yes">
-<attribute name="VALUE" x="161.544" y="79.756" size="1.778" layer="96"/>
+<instance part="U4-DNP" gate="G$1" x="200.66" y="58.42"/>
+<instance part="P+7" gate="1" x="177.8" y="71.12" smashed="yes">
+<attribute name="VALUE" x="176.784" y="74.676" size="1.778" layer="96"/>
 </instance>
-<instance part="GND24" gate="1" x="162.56" y="45.72"/>
-<instance part="C7" gate="G$1" x="149.86" y="68.58" rot="MR0"/>
-<instance part="GND25" gate="1" x="149.86" y="60.96" rot="MR0"/>
-<instance part="P+16" gate="1" x="149.86" y="76.2" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="150.876" y="79.756" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND24" gate="1" x="177.8" y="40.64"/>
+<instance part="C7" gate="G$1" x="152.4" y="48.26" rot="MR0"/>
+<instance part="GND25" gate="1" x="152.4" y="40.64" rot="MR0"/>
+<instance part="P+16" gate="1" x="152.4" y="55.88" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="153.416" y="59.436" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="JP8" gate="G$1" x="241.3" y="17.78"/>
-<instance part="U$1" gate="G$1" x="236.22" y="45.72"/>
+<instance part="U$1" gate="G$1" x="134.62" y="10.16"/>
 <instance part="GND26" gate="1" x="35.56" y="99.06" rot="MR0"/>
-<instance part="SJ2" gate="1" x="213.36" y="66.04"/>
+<instance part="SJ2" gate="1" x="228.6" y="60.96"/>
 <instance part="R4" gate="G$1" x="48.26" y="88.9" rot="R90"/>
 <instance part="R3" gate="G$1" x="48.26" y="106.68" rot="R90"/>
 <instance part="R5" gate="G$1" x="55.88" y="106.68" rot="R90"/>
@@ -12420,6 +12508,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="FID1" gate="G$1" x="241.3" y="27.94"/>
 <instance part="FID2" gate="G$1" x="241.3" y="30.48"/>
 <instance part="D1" gate="G$1" x="22.86" y="160.02"/>
+<instance part="U$3" gate="G$1" x="134.62" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -12554,12 +12643,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="GND"/>
-<wire x1="165.1" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="50.8" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="45.72" x2="177.8" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="63.5" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="43.18" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
@@ -12652,12 +12741,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="VDD"/>
-<wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="73.66" x2="162.56" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="68.58" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="76.2" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="55.88" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="P+16" gate="1" pin="VCC"/>
 </segment>
@@ -12821,8 +12910,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="218.44" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="223.52" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="233.68" y1="60.96" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<label x="238.76" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -12831,7 +12920,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="55.88" y1="96.52" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <junction x="55.88" y="96.52"/>
-<label x="60.96" y="96.52" size="1.778" layer="95"/>
+<label x="66.04" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RXI" class="0">
@@ -12841,18 +12930,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <label x="218.44" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4-DNP" gate="G$1" pin="DOUT"/>
-<wire x1="165.1" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
-<label x="160.02" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="101.6" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="99.06" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
-<junction x="48.26" y="99.06"/>
-<label x="60.96" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="P"/>
+<wire x1="124.46" y1="76.2" x2="132.08" y2="76.2" width="0.2032" layer="91"/>
+<label x="124.46" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -12868,8 +12948,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="DIN"/>
-<wire x1="160.02" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
-<label x="160.02" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
+<label x="175.26" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="EL_G" class="0">
@@ -13095,7 +13175,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="DIO3"/>
 <pinref part="SJ2" gate="1" pin="1"/>
-<wire x1="205.74" y1="66.04" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="60.96" x2="223.52" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CE/SLEEP" class="0">
@@ -13106,8 +13186,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="DTR"/>
-<wire x1="165.1" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
-<label x="160.02" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="48.26" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
+<label x="175.26" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
@@ -13155,6 +13235,34 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="S1" gate="G$1" pin="3"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="25.4" y1="160.02" x2="38.1" y2="160.02" width="0.127" layer="91"/>
+</segment>
+</net>
+<net name="RXI_FTDI" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="O"/>
+<wire x1="139.7" y1="78.74" x2="149.86" y2="78.74" width="0.2032" layer="91"/>
+<label x="149.86" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="101.6" x2="48.26" y2="99.06" width="0.2032" layer="91"/>
+<wire x1="48.26" y1="99.06" x2="48.26" y2="93.98" width="0.2032" layer="91"/>
+<wire x1="48.26" y1="99.06" x2="66.04" y2="99.06" width="0.2032" layer="91"/>
+<junction x="48.26" y="99.06"/>
+<label x="66.04" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RXI_XBEE" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<wire x1="139.7" y1="73.66" x2="149.86" y2="73.66" width="0.2032" layer="91"/>
+<label x="149.86" y="73.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4-DNP" gate="G$1" pin="DOUT"/>
+<wire x1="180.34" y1="66.04" x2="175.26" y2="66.04" width="0.2032" layer="91"/>
+<label x="175.26" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
