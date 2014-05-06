@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12185,7 +12185,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <part name="U$5" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="U3" library="SparkFun" deviceset="ATMEGA168" device="" value="ATMEGA328P"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603" value="Status"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="470"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
@@ -12323,7 +12323,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" value="PMEG4005EJ"/>
-<part name="U$3" library="SparkFun-Electromechanical" deviceset="SWITCH_SPDT" device=""/>
+<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH_SPDT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12508,7 +12508,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <instance part="FID1" gate="G$1" x="241.3" y="27.94"/>
 <instance part="FID2" gate="G$1" x="241.3" y="30.48"/>
 <instance part="D1" gate="G$1" x="22.86" y="160.02"/>
-<instance part="U$3" gate="G$1" x="134.62" y="76.2"/>
+<instance part="S3" gate="G$1" x="134.62" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -12930,7 +12930,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <label x="218.44" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="P"/>
+<pinref part="S3" gate="G$1" pin="P"/>
 <wire x1="124.46" y1="76.2" x2="132.08" y2="76.2" width="0.2032" layer="91"/>
 <label x="124.46" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13239,7 +13239,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 </net>
 <net name="RXI_FTDI" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="O"/>
+<pinref part="S3" gate="G$1" pin="O"/>
 <wire x1="139.7" y1="78.74" x2="149.86" y2="78.74" width="0.2032" layer="91"/>
 <label x="149.86" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -13255,7 +13255,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 </net>
 <net name="RXI_XBEE" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="S"/>
+<pinref part="S3" gate="G$1" pin="S"/>
 <wire x1="139.7" y1="73.66" x2="149.86" y2="73.66" width="0.2032" layer="91"/>
 <label x="149.86" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
