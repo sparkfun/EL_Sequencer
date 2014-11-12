@@ -12171,8 +12171,8 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <part name="U$2" library="SparkFun" deviceset="LOGO-SFE" device="NEW"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
-<part name="LED1" library="SparkFun" deviceset="LED" device="0603" value="Power"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="470"/>
+<part name="LED1" library="SparkFun" deviceset="LED" device="0603" value="Power (green)"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
@@ -12184,8 +12184,8 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <part name="U$6" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="U$5" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="U3" library="SparkFun" deviceset="ATMEGA168" device="" value="ATMEGA328P"/>
-<part name="LED2" library="SparkFun" deviceset="LED" device="0603" value="Status"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="470"/>
+<part name="LED2" library="SparkFun" deviceset="LED" device="0603" value="STAT(RED)"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
@@ -12355,8 +12355,8 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <text x="205.74" y="99.06" size="1.778" layer="94">D11</text>
 <text x="205.74" y="96.52" size="1.778" layer="94">D12</text>
 <text x="205.74" y="93.98" size="1.778" layer="94">D13</text>
-<text x="166.116" y="11.176" size="2.54" layer="94">N. Seidle, M. Grusin</text>
-<text x="238.76" y="7.62" size="2.54" layer="94">2.2</text>
+<text x="171.196" y="11.176" size="2.54" layer="94">N. Seidle, M. Grusin</text>
+<text x="238.76" y="7.62" size="2.54" layer="94">2.3</text>
 <text x="10.16" y="58.42" size="1.778" layer="97">Short SJ1 to bypass regulator</text>
 <text x="10.16" y="60.96" size="1.778" layer="97">3.3V regulator for external inverter</text>
 <text x="223.52" y="55.88" size="1.778" layer="97">Short SJ2 to support</text>
@@ -12372,7 +12372,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <text x="2.54" y="172.72" size="1.778" layer="97">Note that input voltage can be passed directly to inverter by closing SJ1</text>
 <text x="50.8" y="160.02" size="1.778" layer="97">"USB"</text>
 <text x="50.8" y="147.32" size="1.778" layer="97">"BATT"</text>
-<text x="169.926" y="6.604" size="2.54" layer="94">T. Klopfenstein</text>
+<text x="175.006" y="6.604" size="2.54" layer="94">T. Klopfenstein</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="231.14" y="17.78"/>
@@ -13239,9 +13239,9 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 </net>
 <net name="RXI_FTDI" class="0">
 <segment>
-<pinref part="S3" gate="G$1" pin="O"/>
-<wire x1="139.7" y1="78.74" x2="149.86" y2="78.74" width="0.2032" layer="91"/>
-<label x="149.86" y="78.74" size="1.27" layer="95" xref="yes"/>
+<label x="149.86" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="139.7" y1="73.66" x2="149.86" y2="73.66" width="0.2032" layer="91"/>
+<pinref part="S3" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -13255,9 +13255,9 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 </net>
 <net name="RXI_XBEE" class="0">
 <segment>
-<pinref part="S3" gate="G$1" pin="S"/>
-<wire x1="139.7" y1="73.66" x2="149.86" y2="73.66" width="0.2032" layer="91"/>
-<label x="149.86" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="149.86" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="139.7" y1="78.74" x2="149.86" y2="78.74" width="0.2032" layer="91"/>
+<pinref part="S3" gate="G$1" pin="O"/>
 </segment>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="DOUT"/>
