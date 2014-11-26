@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -294,69 +294,69 @@
 <wire x1="41.91" y1="14.605" x2="57.15" y2="14.605" width="0.254" layer="22"/>
 <wire x1="41.91" y1="14.605" x2="41.91" y2="6.35" width="0.254" layer="22"/>
 <wire x1="57.15" y1="5.3975" x2="51.1175" y2="5.3975" width="0.254" layer="22"/>
-<text x="-6.35" y="-20.6375" size="1.778" layer="48" font="vector" ratio="10">NOTE: BEFORE RUNNING DRC, CHANGE RESTRING TO 8MIL</text>
-<text x="-6.35" y="-23.1775" size="1.778" layer="48" font="vector" ratio="10">TO PREVENT XBEE PAD SIZE FROM GROWING</text>
-<wire x1="-1.27" y1="0" x2="-5.08" y2="0" width="0" layer="48"/>
-<wire x1="55.88" y1="2.54" x2="34.29" y2="2.54" width="0" layer="48"/>
-<wire x1="34.29" y1="2.54" x2="8.89" y2="2.54" width="0" layer="48"/>
-<wire x1="8.89" y1="2.54" x2="-5.08" y2="2.54" width="0" layer="48"/>
-<wire x1="-1.27" y1="82.55" x2="-5.08" y2="82.55" width="0" layer="48"/>
-<wire x1="55.88" y1="80.01" x2="-5.08" y2="80.01" width="0" layer="48"/>
-<wire x1="0" y1="83.82" x2="0" y2="86.36" width="0" layer="48"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="8.89" width="0" layer="48"/>
-<wire x1="2.54" y1="8.89" x2="2.54" y2="86.36" width="0" layer="48"/>
-<wire x1="3.81" y1="72.39" x2="-5.08" y2="72.39" width="0" layer="48"/>
-<wire x1="3.81" y1="63.5" x2="-5.08" y2="63.5" width="0" layer="48"/>
-<wire x1="3.81" y1="54.61" x2="-5.08" y2="54.61" width="0" layer="48"/>
-<wire x1="57.15" y1="83.82" x2="57.15" y2="86.36" width="0" layer="48"/>
-<wire x1="54.61" y1="1.27" x2="54.61" y2="86.36" width="0" layer="48"/>
-<wire x1="8.89" y1="2.54" x2="8.89" y2="-5.08" width="0" layer="48"/>
-<wire x1="34.29" y1="2.54" x2="34.29" y2="-5.08" width="0" layer="48"/>
-<wire x1="53.34" y1="72.39" x2="60.96" y2="72.39" width="0" layer="48"/>
-<wire x1="53.34" y1="63.5" x2="60.96" y2="63.5" width="0" layer="48"/>
-<wire x1="53.34" y1="54.61" x2="60.96" y2="54.61" width="0" layer="48"/>
-<wire x1="53.34" y1="45.72" x2="60.96" y2="45.72" width="0" layer="48"/>
-<wire x1="53.34" y1="36.83" x2="60.96" y2="36.83" width="0" layer="48"/>
-<wire x1="53.34" y1="27.94" x2="60.96" y2="27.94" width="0" layer="48"/>
-<wire x1="53.34" y1="19.05" x2="60.96" y2="19.05" width="0" layer="48"/>
-<wire x1="53.34" y1="10.16" x2="60.96" y2="10.16" width="0" layer="48"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-5.08" width="0" layer="48"/>
-<text x="-5.08" y="3.175" size="1.27" layer="48" font="vector" ratio="10" rot="R180">0.10"</text>
-<text x="0.635" y="86.36" size="1.27" layer="48" font="vector" ratio="10" rot="R90">0.00"</text>
-<text x="-5.08" y="80.645" size="1.27" layer="48" font="vector" ratio="10" rot="R180">3.15"</text>
-<text x="-5.08" y="73.025" size="1.27" layer="48" font="vector" ratio="10" rot="R180">2.85"</text>
-<text x="-5.08" y="64.135" size="1.27" layer="48" font="vector" ratio="10" rot="R180">2.50"</text>
-<text x="-5.08" y="55.245" size="1.27" layer="48" font="vector" ratio="10" rot="R180">2.15"</text>
-<text x="-0.635" y="-5.08" size="1.27" layer="48" font="vector" ratio="10" rot="R270">0.00"</text>
-<text x="8.255" y="-5.08" size="1.27" layer="48" font="vector" ratio="10" rot="R270">0.35"</text>
-<text x="33.655" y="-5.08" size="1.27" layer="48" font="vector" ratio="10" rot="R270">1.35"</text>
-<text x="60.96" y="71.755" size="1.27" layer="48" font="vector" ratio="10">2.85"</text>
-<text x="60.96" y="62.865" size="1.27" layer="48" font="vector" ratio="10">2.50"</text>
-<text x="60.96" y="53.975" size="1.27" layer="48" font="vector" ratio="10">2.15"</text>
-<text x="60.96" y="45.085" size="1.27" layer="48" font="vector" ratio="10">1.80"</text>
-<text x="60.96" y="36.195" size="1.27" layer="48" font="vector" ratio="10">1.45"</text>
-<text x="60.96" y="27.305" size="1.27" layer="48" font="vector" ratio="10">1.10"</text>
-<text x="60.96" y="18.415" size="1.27" layer="48" font="vector" ratio="10">0.75"</text>
-<text x="60.96" y="9.525" size="1.27" layer="48" font="vector" ratio="10">0.40"</text>
-<text x="3.175" y="86.36" size="1.27" layer="48" font="vector" ratio="10" rot="R90">0.10"</text>
-<text x="55.245" y="86.36" size="1.27" layer="48" font="vector" ratio="10" rot="R90">2.15"</text>
-<text x="57.785" y="86.36" size="1.27" layer="48" font="vector" ratio="10" rot="R90">2.25"</text>
-<text x="-5.08" y="83.185" size="1.27" layer="48" font="vector" ratio="10" rot="R180">3.25"</text>
-<text x="-5.08" y="0.635" size="1.27" layer="48" font="vector" ratio="10" rot="R180">0.00"</text>
-<wire x1="2.54" y1="8.89" x2="-5.08" y2="8.89" width="0" layer="48"/>
-<wire x1="15.24" y1="17.78" x2="-5.08" y2="17.78" width="0" layer="48"/>
-<text x="-5.08" y="9.525" size="1.27" layer="48" font="vector" ratio="10" rot="R180">0.35"</text>
-<text x="-5.08" y="18.415" size="1.27" layer="48" font="vector" ratio="10" rot="R180">0.70"</text>
-<wire x1="58.42" y1="0" x2="60.96" y2="0" width="0" layer="48"/>
-<text x="60.96" y="-0.635" size="1.27" layer="48" font="vector" ratio="10">0.00"</text>
-<wire x1="1.27" y1="10.16" x2="1.27" y2="-5.08" width="0" layer="48"/>
-<text x="0.635" y="-5.08" size="1.27" layer="48" font="vector" ratio="10" rot="R270">0.05"</text>
-<text x="-5.08" y="1.905" size="1.27" layer="48" font="vector" ratio="10" rot="R180">0.05"</text>
-<wire x1="-5.08" y1="1.27" x2="35.56" y2="1.27" width="0" layer="48"/>
-<wire x1="11.43" y1="52.07" x2="11.43" y2="86.36" width="0" layer="48"/>
-<wire x1="45.72" y1="7.62" x2="45.72" y2="86.36" width="0" layer="48"/>
-<text x="12.065" y="86.36" size="1.27" layer="48" font="vector" ratio="10" rot="R90">0.45"</text>
-<text x="46.355" y="86.36" size="1.27" layer="48" font="vector" ratio="10" rot="R90">1.80"</text>
+<text x="-6.35" y="-21.9075" size="2.54" layer="51" font="vector" ratio="10">NOTE: BEFORE RUNNING DRC, CHANGE RESTRING TO 8MIL</text>
+<text x="-6.35" y="-25.7175" size="2.54" layer="51" font="vector" ratio="10">TO PREVENT XBEE PAD SIZE FROM GROWING</text>
+<wire x1="-1.27" y1="0" x2="-5.08" y2="0" width="0" layer="47"/>
+<wire x1="55.88" y1="2.54" x2="34.29" y2="2.54" width="0" layer="47"/>
+<wire x1="34.29" y1="2.54" x2="8.89" y2="2.54" width="0" layer="47"/>
+<wire x1="8.89" y1="2.54" x2="-5.08" y2="2.54" width="0" layer="47"/>
+<wire x1="-1.27" y1="82.55" x2="-5.08" y2="82.55" width="0" layer="47"/>
+<wire x1="55.88" y1="80.01" x2="-5.08" y2="80.01" width="0" layer="47"/>
+<wire x1="0" y1="83.82" x2="0" y2="86.36" width="0" layer="47"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="8.89" width="0" layer="47"/>
+<wire x1="2.54" y1="8.89" x2="2.54" y2="86.36" width="0" layer="47"/>
+<wire x1="3.81" y1="72.39" x2="-5.08" y2="72.39" width="0" layer="47"/>
+<wire x1="3.81" y1="63.5" x2="-5.08" y2="63.5" width="0" layer="47"/>
+<wire x1="3.81" y1="54.61" x2="-5.08" y2="54.61" width="0" layer="47"/>
+<wire x1="57.15" y1="83.82" x2="57.15" y2="86.36" width="0" layer="47"/>
+<wire x1="54.61" y1="1.27" x2="54.61" y2="86.36" width="0" layer="47"/>
+<wire x1="8.89" y1="2.54" x2="8.89" y2="-5.08" width="0" layer="47"/>
+<wire x1="34.29" y1="2.54" x2="34.29" y2="-5.08" width="0" layer="47"/>
+<wire x1="53.34" y1="72.39" x2="60.96" y2="72.39" width="0" layer="47"/>
+<wire x1="53.34" y1="63.5" x2="60.96" y2="63.5" width="0" layer="47"/>
+<wire x1="53.34" y1="54.61" x2="60.96" y2="54.61" width="0" layer="47"/>
+<wire x1="53.34" y1="45.72" x2="60.96" y2="45.72" width="0" layer="47"/>
+<wire x1="53.34" y1="36.83" x2="60.96" y2="36.83" width="0" layer="47"/>
+<wire x1="53.34" y1="27.94" x2="60.96" y2="27.94" width="0" layer="47"/>
+<wire x1="53.34" y1="19.05" x2="60.96" y2="19.05" width="0" layer="47"/>
+<wire x1="53.34" y1="10.16" x2="60.96" y2="10.16" width="0" layer="47"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-5.08" width="0" layer="47"/>
+<text x="-5.08" y="3.175" size="1.27" layer="47" font="vector" ratio="10" rot="R180">0.10"</text>
+<text x="0.635" y="86.36" size="1.27" layer="47" font="vector" ratio="10" rot="R90">0.00"</text>
+<text x="-5.08" y="80.645" size="1.27" layer="47" font="vector" ratio="10" rot="R180">3.15"</text>
+<text x="-5.08" y="73.025" size="1.27" layer="47" font="vector" ratio="10" rot="R180">2.85"</text>
+<text x="-5.08" y="64.135" size="1.27" layer="47" font="vector" ratio="10" rot="R180">2.50"</text>
+<text x="-5.08" y="55.245" size="1.27" layer="47" font="vector" ratio="10" rot="R180">2.15"</text>
+<text x="-0.635" y="-5.08" size="1.27" layer="47" font="vector" ratio="10" rot="R270">0.00"</text>
+<text x="8.255" y="-5.08" size="1.27" layer="47" font="vector" ratio="10" rot="R270">0.35"</text>
+<text x="33.655" y="-5.08" size="1.27" layer="47" font="vector" ratio="10" rot="R270">1.35"</text>
+<text x="60.96" y="71.755" size="1.27" layer="47" font="vector" ratio="10">2.85"</text>
+<text x="60.96" y="62.865" size="1.27" layer="47" font="vector" ratio="10">2.50"</text>
+<text x="60.96" y="53.975" size="1.27" layer="47" font="vector" ratio="10">2.15"</text>
+<text x="60.96" y="45.085" size="1.27" layer="47" font="vector" ratio="10">1.80"</text>
+<text x="60.96" y="36.195" size="1.27" layer="47" font="vector" ratio="10">1.45"</text>
+<text x="60.96" y="27.305" size="1.27" layer="47" font="vector" ratio="10">1.10"</text>
+<text x="60.96" y="18.415" size="1.27" layer="47" font="vector" ratio="10">0.75"</text>
+<text x="60.96" y="9.525" size="1.27" layer="47" font="vector" ratio="10">0.40"</text>
+<text x="3.175" y="86.36" size="1.27" layer="47" font="vector" ratio="10" rot="R90">0.10"</text>
+<text x="55.245" y="86.36" size="1.27" layer="47" font="vector" ratio="10" rot="R90">2.15"</text>
+<text x="57.785" y="86.36" size="1.27" layer="47" font="vector" ratio="10" rot="R90">2.25"</text>
+<text x="-5.08" y="83.185" size="1.27" layer="47" font="vector" ratio="10" rot="R180">3.25"</text>
+<text x="-5.08" y="0.635" size="1.27" layer="47" font="vector" ratio="10" rot="R180">0.00"</text>
+<wire x1="2.54" y1="8.89" x2="-5.08" y2="8.89" width="0" layer="47"/>
+<wire x1="15.24" y1="17.78" x2="-5.08" y2="17.78" width="0" layer="47"/>
+<text x="-5.08" y="9.525" size="1.27" layer="47" font="vector" ratio="10" rot="R180">0.35"</text>
+<text x="-5.08" y="18.415" size="1.27" layer="47" font="vector" ratio="10" rot="R180">0.70"</text>
+<wire x1="58.42" y1="0" x2="60.96" y2="0" width="0" layer="47"/>
+<text x="60.96" y="-0.635" size="1.27" layer="47" font="vector" ratio="10">0.00"</text>
+<wire x1="1.27" y1="10.16" x2="1.27" y2="-5.08" width="0" layer="47"/>
+<text x="0.635" y="-5.08" size="1.27" layer="47" font="vector" ratio="10" rot="R270">0.05"</text>
+<text x="-5.08" y="1.905" size="1.27" layer="47" font="vector" ratio="10" rot="R180">0.05"</text>
+<wire x1="-5.08" y1="1.27" x2="35.56" y2="1.27" width="0" layer="47"/>
+<wire x1="11.43" y1="52.07" x2="11.43" y2="86.36" width="0" layer="47"/>
+<wire x1="45.72" y1="7.62" x2="45.72" y2="86.36" width="0" layer="47"/>
+<text x="12.065" y="86.36" size="1.27" layer="47" font="vector" ratio="10" rot="R90">0.45"</text>
+<text x="46.355" y="86.36" size="1.27" layer="47" font="vector" ratio="10" rot="R90">1.80"</text>
 <text x="20.955" y="10.4775" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">10</text>
 <text x="2.8575" y="5.08" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">1</text>
 <text x="20.955" y="32.385" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">11</text>
@@ -379,14 +379,6 @@
 <text x="34.6075" y="3.4925" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">FTDI</text>
 <text x="28.8925" y="4.7625" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">XBEE</text>
 <text x="34.6075" y="4.445" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">FTDI</text>
-<dimension x1="0" y1="0" x2="57.15" y2="0" x3="28.575" y3="-6.985" textsize="1.778" textratio="15" layer="47" visible="yes"/>
-<dimension x1="0" y1="82.55" x2="0" y2="0" x3="-14.2875" y3="41.275" textsize="1.778" textratio="15" layer="47" visible="yes"/>
-<dimension x1="6.985" y1="1.27" x2="0" y2="1.27" x3="3.4925" y3="-3.175" textsize="1.778" textratio="15" layer="47" visible="yes"/>
-<dimension x1="0" y1="76.835" x2="0" y2="67.945" x3="-1.905" y3="72.39" textsize="1.778" textratio="15" layer="47" visible="yes"/>
-<dimension x1="57.15" y1="76.835" x2="56.515" y2="5.3975" x3="62.865" y3="41.11625" textsize="1.778" textratio="15" layer="47" dtype="vertical" visible="yes"/>
-<dimension x1="0" y1="50.165" x2="1.5875" y2="76.835" x3="-9.8425" y3="63.5" textsize="1.778" textratio="15" layer="47" dtype="vertical" visible="yes"/>
-<dimension x1="0" y1="0" x2="50.165" y2="0" x3="25.0825" y3="-4.1275" textsize="1.778" textratio="15" layer="47" visible="yes"/>
-<dimension x1="2.54" y1="2.54" x2="2.57175" y2="4.191" x3="-7.239" y3="3.3655" textsize="1.778" textratio="15" layer="47" dtype="vertical" visible="yes"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -3431,7 +3423,6 @@ design rules under a new name.</description>
 <contactref element="U3" pad="29"/>
 <contactref element="JP5" pad="5"/>
 <contactref element="C5" pad="2"/>
-<contactref element="S2" pad="1"/>
 <via x="11.83" y="10.795" extent="1-16" drill="0.381"/>
 <wire x1="15.455" y1="32.385" x2="16.93" y2="32.385" width="0.254" layer="1"/>
 <wire x1="11.83" y1="10.795" x2="11.83" y2="13.4874" width="0.254" layer="1"/>
@@ -3449,12 +3440,13 @@ design rules under a new name.</description>
 <wire x1="15.455" y1="32.385" x2="15.455" y2="31.965" width="0.254" layer="1"/>
 <wire x1="15.455" y1="31.965" x2="14.986" y2="31.496" width="0.254" layer="1"/>
 <wire x1="14.986" y1="31.496" x2="12.954" y2="31.496" width="0.254" layer="1"/>
-<wire x1="13.335" y1="34.036" x2="12.446" y2="34.036" width="0.254" layer="1"/>
 <wire x1="12.446" y1="34.036" x2="12.065" y2="33.655" width="0.254" layer="1"/>
 <wire x1="12.065" y1="33.655" x2="12.065" y2="32.385" width="0.254" layer="1"/>
 <wire x1="12.065" y1="32.385" x2="12.954" y2="31.496" width="0.254" layer="1"/>
-<wire x1="13.335" y1="34.036" x2="13.335" y2="35.2425" width="0.254" layer="1"/>
 <wire x1="13.335" y1="35.2425" x2="13.0175" y2="35.56" width="0.254" layer="1"/>
+<contactref element="S2" pad="1"/>
+<wire x1="12.446" y1="34.036" x2="13.335" y2="34.036" width="0.254" layer="1"/>
+<wire x1="13.335" y1="34.036" x2="13.335" y2="35.2425" width="0.254" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U3" pad="15"/>

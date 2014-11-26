@@ -24098,7 +24098,7 @@ can be analog input
 <instance part="P+4" gate="G$1" x="162.56" y="177.8" smashed="yes">
 <attribute name="VALUE" x="161.544" y="181.356" size="1.778" layer="96"/>
 </instance>
-<instance part="GND16" gate="1" x="162.56" y="144.78"/>
+<instance part="GND16" gate="1" x="160.02" y="144.78"/>
 <instance part="JP5" gate="G$1" x="119.38" y="12.7"/>
 <instance part="P+1" gate="G$1" x="139.7" y="17.78" smashed="yes">
 <attribute name="VALUE" x="138.684" y="21.336" size="1.778" layer="96"/>
@@ -24126,9 +24126,9 @@ can be analog input
 <instance part="P+2" gate="G$1" x="175.26" y="170.18" smashed="yes">
 <attribute name="VALUE" x="174.244" y="173.736" size="1.778" layer="96"/>
 </instance>
-<instance part="S2" gate="G$1" x="162.56" y="154.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="165.1" y="157.48" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="160.02" y="157.48" size="1.778" layer="96" rot="R270"/>
+<instance part="S2" gate="G$1" x="160.02" y="154.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="162.56" y="157.48" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="157.48" y="157.48" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="JP4" gate="G$1" x="104.14" y="45.72" smashed="yes">
 <attribute name="NAME" x="104.14" y="34.798" size="1.778" layer="95" rot="R180"/>
@@ -24342,7 +24342,7 @@ can be analog input
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="147.32" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="147.32" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4-DNP" gate="G$1" pin="GND"/>
@@ -24459,14 +24459,16 @@ can be analog input
 <segment>
 <wire x1="162.56" y1="165.1" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="162.56" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
 <junction x="162.56" y="162.56"/>
 <label x="167.64" y="162.56" size="1.778" layer="95"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$1" pin="PC6(/RESET)"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="160.02" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="162.56" x2="160.02" y2="160.02" width="0.1524" layer="91"/>
+<junction x="160.02" y="162.56"/>
 </segment>
 <segment>
 <wire x1="111.76" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
@@ -25358,8 +25360,7 @@ can be analog input
 <pinref part="JP9" gate="G$1" pin="1"/>
 <pinref part="JP17" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="160.02" x2="83.82" y2="160.02" width="0.1524" layer="91"/>
-<label x="83.82" y="172.72" size="1.778" layer="95" xref="yes"/>
-<label x="83.82" y="172.72" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="172.72" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
@@ -25371,7 +25372,7 @@ can be analog input
 <pinref part="JP10" gate="G$1" pin="1"/>
 <pinref part="JP18" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
-<label x="83.82" y="137.16" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="137.16" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
@@ -25383,7 +25384,7 @@ can be analog input
 <pinref part="JP11" gate="G$1" pin="1"/>
 <pinref part="JP19" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
-<label x="83.82" y="101.6" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="101.6" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
@@ -25395,7 +25396,7 @@ can be analog input
 <pinref part="JP12" gate="G$1" pin="1"/>
 <pinref part="JP20" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
-<label x="83.82" y="66.04" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="66.04" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="213.36" y1="160.02" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
@@ -25407,7 +25408,7 @@ can be analog input
 <pinref part="JP13" gate="G$1" pin="1"/>
 <pinref part="JP24" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="160.02" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
-<label x="195.58" y="172.72" size="1.778" layer="95" xref="yes"/>
+<label x="195.58" y="172.72" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="213.36" y1="124.46" x2="210.82" y2="124.46" width="0.1524" layer="91"/>
@@ -25419,7 +25420,7 @@ can be analog input
 <pinref part="JP14" gate="G$1" pin="1"/>
 <pinref part="JP23" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="124.46" x2="195.58" y2="124.46" width="0.1524" layer="91"/>
-<label x="195.58" y="137.16" size="1.778" layer="95" xref="yes"/>
+<label x="195.58" y="137.16" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="213.36" y1="88.9" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
@@ -25431,7 +25432,7 @@ can be analog input
 <pinref part="JP15" gate="G$1" pin="1"/>
 <pinref part="JP22" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="88.9" x2="195.58" y2="88.9" width="0.1524" layer="91"/>
-<label x="195.58" y="101.6" size="1.778" layer="95" xref="yes"/>
+<label x="195.58" y="101.6" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="213.36" y1="53.34" x2="210.82" y2="53.34" width="0.1524" layer="91"/>
@@ -25443,7 +25444,7 @@ can be analog input
 <pinref part="JP16" gate="G$1" pin="1"/>
 <pinref part="JP21" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="53.34" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
-<label x="195.58" y="66.04" size="1.778" layer="95" xref="yes"/>
+<label x="195.58" y="66.04" size="1.4224" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$117" class="0">
