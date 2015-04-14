@@ -48,8 +48,8 @@ void loop()
     delay(100);              // wait for 1/10 second
     digitalWrite(x, LOW);    // turn the EL channel off
 
-    digitalWrite(10, status);   // blink both status LEDs
-    digitalWrite(13, status);
+    //digitalWrite(10, status);   //Uncomment this line if using the EL Escudo Dos
+    digitalWrite(13, status);	// blink status LEDs
     status = !status; 
   }
 }
