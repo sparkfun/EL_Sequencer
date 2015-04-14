@@ -1,7 +1,8 @@
-/*
-Wireless EL Sequencer w/ XBee Series 1
-Ho Yun Bobby Chan @ SparkFun Electronics
-June 20, 2014
+/**********************************************************************
+SparkFun XBee EL Sequencer Demo Sketch
+Ho Yun Bobby Chan @ SparkFun Electronics June 20, 2014
+Updated by Toni Klopfenstein @ SparkFun Electronics April, 2015
+https://github.com/sparkfun/EL_Sequencer
 
 Description:
 This is a basic test of the EL Sequencer with a wireless controller.
@@ -31,27 +32,37 @@ uploading a new sketch file otherwise it will brick the XBee. You can
 always use the next generation XCTU software to unbrick and recover
 the transceiver.
 
- */
+Development environment specifics:
+Arduino 1.6.3
 
+This code is beerware; if you see me (or any other SparkFun employee) at the local, 
+and you've found our code helpful, please buy us a round!
+Distributed as-is; no warranty is given.
+
+***********************************************************************/
+
+//Declare character 'val'
 char val;
 
+/*******************Setup Loop***************************/
 void setup(){
-  Serial.begin(9600); //for debugging
-  pinMode(13, OUTPUT); //Status LED to test
+  Serial.begin(9600); //Begin Serial communication for debugging
+  pinMode(13, OUTPUT); //Set pin mode as output for status LED
   val = 'A';// button pressed, therefore sending  letter A
 
   Serial.println("EL Sequencer's XBee is Ready to Receive Characters");
-  digitalWrite(13,LOW); //set Status LED OFF
-  delay(1000);
+  digitalWrite(13,LOW); //set Status LED off
+  delay(1000); //Wait 1 second
 }
 
+/*******************Main Loop***************************/
 void loop(){
 
-  //if xbee is receiving data from other XBee
+  //Check if XBee is receiving data from other XBee
   if(Serial.available()){
     val = Serial.read();
     
-    //check to see if character sent is letter A
+    //Check to see if character sent is letter A
     if(val == 'A'){
         digitalWrite(13,HIGH); //turn ON Status LED
         delay(50);

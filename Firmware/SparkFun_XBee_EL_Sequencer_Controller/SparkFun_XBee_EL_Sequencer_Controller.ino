@@ -1,7 +1,8 @@
-/*
-Remote Push Button Controller for EL Sequencer w/ XBee Series 1
-Ho Yun Bobby Chan @ SparkFun Electronics
-June 20, 2014
+/*******************************************************************
+SparkFun XBee EL Sequencer Controller
+Ho Yun Bobby Chan @ SparkFun Electronics June 20, 2014
+Updated by Toni Klopfenstein @ SparkFun Electronics April, 2015
+https://github.com/sparkfun/EL_Sequencer
 
 Description:
 This is a basic test of the EL Sequencer with a wireless controller.
@@ -42,14 +43,24 @@ send one character through the XBee. Logic is used to control
 how many characters are sent with the push button. The Arduino
 will not send another character until the button is pressed again.
 
-NOte: This section of the code can be optimized. As the user is not 
+Note: This section of the code can be optimized. As the user is not 
 pressing down on the button, logic can be added so that the XBee is
 not continuously sending serial characters to the receiving 
 EL Sequencer when idle.
-*/
+
+Development environment specifics:
+Arduino 1.6.3
+
+This code is beerware; if you see me (or any other SparkFun employee) at the local, 
+and you've found our code helpful, please buy us a round!
+Distributed as-is; no warranty is given.
+**************************************************************************/
 
 #include <SoftwareSerial.h>
+
 SoftwareSerial xbee(2,3); //Rx = 2, Tx = 3
+
+//Declare variables and pin definitions
 
 const int button1Pin = 8; //push button
 const int ledPin1 = 13;  //LED on the push button
@@ -57,10 +68,14 @@ const int ledPin1 = 13;  //LED on the push button
 boolean prev_button1State = false;
 boolean current_button1State = false;
 
+/*******************Setup Loop***************************/
 void setup(){
+  
+  //Declare pin modes
   pinMode(button1Pin,INPUT_PULLUP); //use internal pullup resistor with LED
-
   pinMode (ledPin1, OUTPUT);
+  
+  //Declare serial connections for debugging
   Serial.begin(9600);
   Serial.println("Arduino started sending bytes via XBee");
 
@@ -68,14 +83,15 @@ void setup(){
   Serial.println("EL Sequencer Controller's XBee Ready to Communicate");
 }
 
+/*******************Main Loop***************************/
 void loop(){
   int button1State;
 
   button1State = digitalRead(button1Pin);
-  /*button1state
+  /***button1state
    - LOW or 0 means pressed
    - HIGH or 1 means not pressed
-   */
+   ****/
 
   //if button is pressed, it will be pulled low
   if(button1State == LOW){

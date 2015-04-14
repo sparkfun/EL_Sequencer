@@ -1,22 +1,32 @@
-/*
-EL SimÃ³n
-N.Poole 2011
-SparkFun Electronics
+/*************************************************************************************
+SparkFun EL Simon
+Nick Poole @ SparkFun Electronics 2011
+Updated by Toni Klopfenstein @ SparkFun Electronics April 2015
+https://github.com/sparkfun/EL_Sequencer
 
+Notes: 
 I wrote this code just to show off some EL Panel. It originally ran on an EL Sequencer 
 Board which had the Arduino Bootloader on it, but feel free to modify it for whatever
-hardware you want! The hardware setup is pretty straight-forward: 4 EL Panels are connected
-to the A,B,C and D outputs on the Sequencer and 4 Force Sensitive Resistors are mounted 
-below them, attached to Analog pins A3-6. Finally, a buzzer or small speaker is connected
-between A2 and ground. 
+hardware you want! The hardware setup is pretty straight-forward: 4 EL Panels 
+(https://www.sparkfun.com/products/10798) are connected
+to the A,B,C and D outputs on the Sequencer and 4 Force Sensitive Resistors 
+(https://www.sparkfun.com/products/9375) are mounted below them, 
+attached to Analog pins A3-6. Finally, a buzzer or small speaker is connected between A2 and ground. 
 
 I could have just modified the Simon Game code from our small Simon games but I had always
 wanted to write Simon as a programming exercise so this was my quick attempt. I hope you
 find it helpful, and enjoy!
 
 
-*/
+Development environment specifics:
+Arduino 1.6.3
 
+This code is beerware; if you see me (or any other SparkFun employee) at the local, and you've found our code helpful, please buy us a round!
+Distributed as-is; no warranty is given.
+
+**************************************************************************************/
+
+//Define button status
 int A = 0; //button A status
 int B = 0; //button B status
 int C = 0; //button C status
@@ -26,31 +36,34 @@ int steps = 1; // # of steps
 
 char Str1[20]; // This is where the correct answers will go
 
+/*****************Setup Loop************************/
 void setup() {
   
-  Serial.begin(9600);
+  Serial.begin(9600); //Begin Serial communication for debugging
   
   Serial.println("Setup");
   
+  //Declare pin functions
   pinMode(2, OUTPUT); // EL Panels
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
   
-  pinMode(A6, INPUT); // FSRs
+  pinMode(A6, INPUT); // Force Sensitive Resistors
   pinMode(A3, INPUT);
   pinMode(A4, INPUT);
   pinMode(A5, INPUT);
   
   pinMode(A2, OUTPUT); // Buzzer
   
-  randomSeed(analogRead(A7)); // floating analog pin
+  randomSeed(analogRead(A7)); // floating analog pin for random number generator
   
   for(int r = 0; r < 20; r++){ // fill our answer sheet with random steps
     Str1[r] = random(1,5);}
 
 }
 
+/*****************Main Loop************************/
 void loop() {
   
   Serial.println("Main Loop");
@@ -65,9 +78,10 @@ void loop() {
     
 }
 
+/*****************Player Function Loop************************/
 void player(){
   
-  Serial.println("Player LooP");
+  Serial.println("Player Loop");
   
   int answer = 0; //guess for each step
   
@@ -85,6 +99,8 @@ void player(){
   D = analogRead(A6);
   
   answer = 5; //decoy: if this changes, a button has been pressed
+  
+  //Compare the force inputs on each FSR. If above a value of 300, play a corresponding tone on the buzzer
   
   if(A > 300){
   digitalWrite(2, HIGH);
@@ -133,6 +149,7 @@ if(correct == 0){loser();} //if you were booted from the loop for a wrong answer
 
 } } 
 
+/*****************Simon Function Loop************************/
 void simon(){
   
   Serial.println("simon loop");
@@ -173,6 +190,7 @@ void simon(){
     
 }
 
+/*****************Losing Function Loop************************/
 void loser(){ //if you're here... you lost.
 
 Serial.println("loser loop");
@@ -201,6 +219,7 @@ setup(); //start all over
 
 }
 
+/*****************Winning Function Loop************************/
 void winner(){ //congrats!
   
   Serial.print("sheen loop");

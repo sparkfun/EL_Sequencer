@@ -1,7 +1,9 @@
-EL Sequencer
-============
-[![EL Sequencer](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/3/2/3/11323-01a_medium.jpg)  
-*EL Sequencer (COM-11323)*](https://www.sparkfun.com/products/11323)
+SparkFun EL Sequencer
+=====================
+
+![SparkFun EL Sequencer](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/3/2/3/11323-01a_medium.jpg)  
+
+[*SparkFun EL Sequencer (COM-11323)*](https://www.sparkfun.com/products/11323)
 
 The EL Sequencer is a board that contains an Arduino-compatible microcontroller, 
 and circuitry for controlling up to eight strands of electroluminescent wire.
@@ -10,12 +12,12 @@ Repository Contents
 -------------------
 * **/Firmware** - Example Arduino sketches
 * **/Hardware** - All Eagle design files (.brd, .sch)
+* **/Production** - Test bed files and production panel files
 
 License Information
 -------------------
-The hardware is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
-All other code is open source so please feel free to do anything you want with it; 
-you buy me a beer if you use this and we meet someday ([Beerware license](http://en.wikipedia.org/wiki/Beerware)).
+The hardware is released under [Creative Commons ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+The code is beerware; if you see me (or any other SparkFun employee) at the local, and you've found our code helpful, please buy us a round!
 
-test2
+Distributed as-is; no warranty is given.
 
