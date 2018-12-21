@@ -1,5 +1,6 @@
 EL Sequencer
 ============
+
 [![EL Sequencer](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/3/2/3/11323-01a_medium.jpg)  
 *EL Sequencer (COM-11323)*](https://www.sparkfun.com/products/11323)
 
@@ -10,6 +11,12 @@ Repository Contents
 -------------------
 * **/Firmware** - Example Arduino sketches
 * **/Hardware** - All Eagle design files (.brd, .sch)
+
+Documentation
+--------------
+* **[Getting Started with Electroluminescent (EL) Wire](https://learn.sparkfun.com/tutorials/getting-started-with--el-wire)** - Basic tutorial on EL Wire
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/el-sequencerescudo-dos-hookup-guide)** - Basic hookup guide for the EL Sequencer
+
 
 License Information
 -------------------
