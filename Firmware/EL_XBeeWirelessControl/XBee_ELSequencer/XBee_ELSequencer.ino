@@ -12,8 +12,8 @@ battery, and a XBee Series 1 transceiver.  An XBee Series 2
 can be used but the throughput of the Series 1 is much higher. To
 reduce latency, I recommend using the XBee Series 1. The basic
 configuration of the XBee module with point-to-point configuratin is
-based on Digi's Example tutorial 
-=> http://examples.digi.com/get-started/basic-xbee-802-15-4-chat/ .
+based on Digi's Example tutorial for "Basic XBee 802.15.4 (Series 1) Chat"
+=> https://www.digi.com/blog/xbee/basic-xbee-802-15-4-chat/ .
 Page 5 of the tutorial shows you how to broadcast with
 point-to-multipoint configuration so that multiple EL Sequencers
 can be controlled.
